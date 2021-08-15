@@ -1,0 +1,10 @@
+<p>List of players</p>
+<ul>
+  <li *ngFor="let player of players ">
+    <a routerLink="/playerDetail/{{player.id}}">
+      <span class="badge">{{player.id}}</span> {{player.name}}
+    </a>
+  </li>
+</ul>
+
+
